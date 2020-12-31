@@ -337,7 +337,7 @@ impl Display {
         config: &Config,
     ) -> Result<(GlyphCache, f32, f32), Error> {
         let font = config.ui_config.font.clone();
-        let rasterizer = Rasterizer::new(dpr as f32, config.ui_config.font.use_thin_strokes)?;
+        let rasterizer = Rasterizer::new(dpr as f32, config.ui_config.font.use_thin_strokes, config.ui_config.font.force_aliasing)?;
 
         // Initialize glyph cache.
         let glyph_cache = {
