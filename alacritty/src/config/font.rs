@@ -24,6 +24,9 @@ pub struct Font {
 
     pub use_thin_strokes: bool,
 
+    /// Force alliased rendering regardless of system defaults
+    pub force_aliasing: bool,
+
     /// Normal font face.
     normal: FontDescription,
 
