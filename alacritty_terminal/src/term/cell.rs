@@ -111,6 +111,7 @@ impl Cell {
         self.flags.remove(Flags::WIDE_CHAR);
         self.drop_extra();
         self.c = ' ';
+    }
 
     /// Graphic present in the cell.
     #[inline]
